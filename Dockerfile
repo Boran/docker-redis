@@ -19,7 +19,7 @@ ENV REDIS_DOWNLOAD_SHA1 fe1d06599042bfe6a0e738542f302ce9533dde88
 #RUN yum -y install httpd; yum clean all; 
 
 # for redis-sentinel see: http://redis.io/topics/sentinel
-RUN buildDeps='gcc libc6-dev make tar'; \
+RUN buildDeps='gcc libc6-dev make tar sudo'; \
         set -x \
         && yum -y update && yum -y install $buildDeps \
 #        && rm -rf /var/lib/apt/lists/* \
