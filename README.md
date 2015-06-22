@@ -3,6 +3,6 @@ Docker image of redis
 - 
 
 # testing:
-docker build -t=redis2 .
-docker run -it --rm --name redis redis2
+sudo docker build -t=redis2 .
+sudo docker run -it --rm --name redis redis2
 
