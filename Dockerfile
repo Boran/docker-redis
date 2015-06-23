@@ -21,6 +21,8 @@ ENV REDIS_DOWNLOAD_SHA1 a38755fe9a669896f7c5d8cd3ebbf76d59712002
 ENV REDIS_DOWNLOAD_URL  http://download.redis.io/releases/redis-${REDIS_VERSION}.tar.gz
 
 
+#RUN yum -y install httpd; yum clean all; 
+
 # for redis-sentinel see: http://redis.io/topics/sentinel
 RUN buildDeps='gcc libc6-dev make tar sudo'; \
         set -x \
